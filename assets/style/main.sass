@@ -1,0 +1,78 @@
+$blue: #0c86ae
+
+html
+	height: 100%
+	
+	body
+		height: 100%
+		background-color: #e2e2e2
+		text-align: center
+		margin: 0
+		padding: 0
+
+		.contain
+			position: relative
+			top: 15%
+			width: 50% !important
+			height: 45% !important
+			margin: auto
+			background: url('../img/blackorchid.png') repeat transparent
+			border-radius: 20px
+			box-shadow: 0px 0px 5px 1px #000000
+			padding: 1%
+
+			.badge
+				// position: relative
+				// top: 10%
+				margin-bottom: 15%
+				width: 80px
+				height: 80px
+				border-radius: 50%
+				background-color: $blue
+				margin: auto
+				z-index: 5
+				box-shadow: 0px 0px 5px 1px #000000
+
+				div
+					font-family: 'Denk One'
+					font-size: 2.2em
+					color: #ffffff
+					position: relative
+					top: 25%
+
+			.name
+				margin: 0
+				margin-top: 5%
+				margin-bottom: 8%
+				font-family: 'Dosis'
+				font-weight: 200
+				font-size: 3em
+				color: $blue
+
+			ul.icons
+				position: relative
+				// top: 25%
+				// left: 2.5%
+				margin: 8% auto 0 auto
+				padding: 0
+				list-style: none
+				width: 75%
+				li
+					text-align: center
+					display: inline-block
+					width: 2em
+					a
+						display: block
+						text-decoration: none
+
+						i
+							font-size: 2em
+							color: $blue
+							opacity: 0.8
+							margin-left: 100%
+
+						i:hover
+							opacity: 1
+							
+				li:not(:last-of-type)
+					margin-right: 15%

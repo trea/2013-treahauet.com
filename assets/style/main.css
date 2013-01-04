@@ -1,0 +1,63 @@
+html {
+  height: 100%; }
+  html body {
+    height: 100%;
+    background-color: #e2e2e2;
+    text-align: center;
+    margin: 0;
+    padding: 0; }
+    html body .contain {
+      position: relative;
+      top: 15%;
+      width: 50% !important;
+      height: 45% !important;
+      margin: auto;
+      background: url("../img/blackorchid.png") repeat transparent;
+      border-radius: 20px;
+      box-shadow: 0px 0px 5px 1px black;
+      padding: 1%; }
+      html body .contain .badge {
+        margin-bottom: 15%;
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        background-color: #0c86ae;
+        margin: auto;
+        z-index: 5;
+        box-shadow: 0px 0px 5px 1px black; }
+        html body .contain .badge div {
+          font-family: "Denk One";
+          font-size: 2.2em;
+          color: white;
+          position: relative;
+          top: 25%; }
+      html body .contain .name {
+        margin: 0;
+        margin-top: 5%;
+        margin-bottom: 8%;
+        font-family: "Dosis";
+        font-weight: 200;
+        font-size: 3em;
+        color: #0c86ae; }
+      html body .contain ul.icons {
+        position: relative;
+        margin: 8% auto 0 auto;
+        padding: 0;
+        list-style: none;
+        width: 75%; }
+        html body .contain ul.icons li {
+          text-align: center;
+          display: inline-block;
+          width: 2em; }
+          html body .contain ul.icons li a {
+            display: block;
+            text-decoration: none; }
+            html body .contain ul.icons li a i {
+              font-size: 2em;
+              color: #0c86ae;
+              opacity: 0.8;
+              margin-left: 100%; }
+            html body .contain ul.icons li a i:hover {
+              opacity: 1; }
+        html body .contain ul.icons li:not(:last-of-type) {
+          margin-right: 15%; }
