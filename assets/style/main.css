@@ -59,4 +59,8 @@ html {
             html body .contain ul.icons li a i:hover {
               opacity: 1; }
         html body .contain ul.icons li:not(:last-of-type) {
-          margin-right: 15%; }
+          margin-right: 5%; }
+
+@media screen and (max-width: 640px) {
+  ul.icons li:not(:last-of-type) {
+    margin-right: 0 !important; } }

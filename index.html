@@ -39,6 +39,11 @@
 					</a>
 				</li>
 				<li>
+					<a href="http://linkedin.com/in/treahauet" title="LinkedIn">
+						<i class="icon-linkedin"></i>
+					</a>
+				</li>
+				<li>
 					<a href="mailto:trea+landing@treahauet.com" title="Email">
 						<i class="icon-envelope"></i>
 					</a>
@@ -55,17 +60,31 @@
 				var mess = $('.imessage i');
 				if (navigator.userAgent.indexOf('iP') > -1) {
 					var ios = true;
+					var android = false;
 					$(mess).attr('title', 'iMessage');
 					$(mess).attr('data-placement', 'bottom');
 					$(mess).parent('a').attr('href', 'sms:imessage@treahauet.com');
 				}
 				else {
 					var ios = false;
+					var android = (navigator.userAgent.indexOf('Android') > -1);
 					$(mess).attr('title', 'SMS (435) 227-5439');
 					$(mess).attr('data-placement', 'bottom');
 					$(mess).parent('a').attr('href', 'sms:+14352275439');
 				}
-				// $('[title]').tooltip();
+
+				if (ios || android) {
+					$('i.icon-twitter').parent('a').on('click touchstart', function(e){
+						e.preventDefault();
+
+						if (confirm('Open in Twitter application?')) {
+							window.location = "twitter://user?screen_name=treahauet";
+						}
+						else {
+							window.location = 'http://twitter.com/treahauet';		
+						}
+					});
+				}
 			});
 		</script>
 	</body>
