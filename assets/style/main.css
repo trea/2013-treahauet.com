@@ -10,7 +10,6 @@ html {
       position: relative;
       top: 15%;
       width: 50% !important;
-      height: 45% !important;
       margin: auto;
       background: url("../img/blackorchid.png") repeat transparent;
       border-radius: 20px;
@@ -41,7 +40,7 @@ html {
         color: #0c86ae; }
       html body .contain ul.icons {
         position: relative;
-        margin: 8% auto 0 auto;
+        margin: 8% auto 8% auto;
         padding: 0;
         list-style: none;
         width: 75%; }
